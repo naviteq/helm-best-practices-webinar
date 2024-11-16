@@ -8,7 +8,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: staging-sample
-  # А можем явно указать NS
+  # Here we should define the NS as is
   namespace: staging
 spec:
   selector:
@@ -31,7 +31,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: staging-sample
-  # А можем явно указать NS
   namespace: staging
 spec:
   type: ClusterIP
@@ -46,7 +45,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: staging-sample
-  # А можем явно указать NS
   namespace: staging
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$2

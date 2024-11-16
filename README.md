@@ -1,5 +1,4 @@
-# devopsdays-kz-2024
-DevOps Days (KZ) 2024
+# Naviteq webinar November 2024
 
 1. Add library chart
 ```bash
